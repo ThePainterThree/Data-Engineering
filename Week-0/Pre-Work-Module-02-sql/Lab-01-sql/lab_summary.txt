@@ -1,0 +1,14 @@
+LAb summary
+
+In this lab, I learned how to write basic SQL queries to retrieve, filter, sort, and format data from a relational database.
+I practiced using `SELECT` statements to retrieve all columns or specific columns, applied `WHERE` clauses to filter records, and used `ORDER BY` and `LIMIT` to organize and restrict query results. 
+I also learned how to use column aliases to make query output more readable.
+
+One challenge I encountered was adapting SQL syntax to SQLite. 
+For example, SQLite uses the `||` operator for string concatenation instead of the `CONCAT()` function. 
+I also needed to join the `orders` and `products` tables to retrieve the product price when creating a formatted order summary. 
+After reviewing the table relationships, I used the `product_id` foreign key to correctly combine data from both tables. All queries executed successfully after correcting a few syntax errors, such as missing commas and semicolons.
+
+To handle missing data, I used `IS NULL` and `IS NOT NULL` to identify or exclude `NULL` values. 
+I also used the `COALESCE()` function to replace missing order statuses with `"Unknown"` so the output remained meaningful. SQL functions such as `LOWER()`, `UPPER()`, `TRIM()`, and `CAST()` helped clean and format the data, 
+making the query results easier to read and more suitable for reporting.

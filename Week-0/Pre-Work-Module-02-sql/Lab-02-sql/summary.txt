@@ -1,0 +1,20 @@
+Lab M2.02 Summary
+
+In this lab, I created and queried a multi-table database using customers, orders, products, order_items, and categories.
+
+I used INNER JOIN to return only matching records between related tables, such as customers with orders and products with categories. 
+I used LEFT JOIN when I needed to include all records from one table, even if there was no match, such as customers with zero orders. 
+Since SQLite does not directly support RIGHT JOIN or FULL OUTER JOIN, I simulated them using reversed LEFT JOINs and UNION.
+
+I used COUNT, SUM, AVG, MIN, and MAX to calculate totals. 
+
+I used GROUP BY to summarize data by customer, product, category, country, and order status. 
+I used HAVING to filter grouped results, such as customers with more than two orders or categories with revenue greater than 1000.
+
+Challenges:
+The most challenging parts were:
+1.Know when to use WHERE versus HAVING;
+2.How GROUP BY works when using multiple columns;
+3.THe complex queries, breaking it down step by step, and (try) not to get confused in the process.
+
+INsights: It's a very long LAB... 
