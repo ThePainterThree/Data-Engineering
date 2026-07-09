@@ -155,7 +155,6 @@ print(arr[0, 1])# row 0, col 1
 print(arr[2][-1]) # row 1, col 2
 
 print(arr[-1, -1]) # last row, last col
-print(arr[])
 
 a = np.array([10,12,14,17,18,23,45,15,78])
 #accessing values inside the array
