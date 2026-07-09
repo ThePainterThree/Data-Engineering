@@ -1,3 +1,5 @@
+import numpy as np
+
 #4. Combined Practice Set 
 #Problem 1: Simple function and return (Beginner)
 # Write a function tax_amount(subtotal, tax_rate=0.05) that returns just the tax amount (not total).
