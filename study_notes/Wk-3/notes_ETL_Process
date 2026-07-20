@@ -1,0 +1,21 @@
+Clean Data:
+
+- Inspect the dataset before cleaning it.
+  Check:
+  column names,
+  data types,
+  missing-value counts,
+  duplicate rows,
+  a few sample records.
+
+- Check the actual column names first.
+  - Column names are case-sensitive.
+
+- Handle missing data before converting to lowercase.
+
+- Fill missing values first, then apply lowercase formatting.
+
+- Do not convert directly with astype(int) unless the column is guaranteed clean.
+  It will fail if the column contains: - missing values, - decimal values, - text, - invalid entries.
+
+- First convert invalid values to missing values, decide whether to remove or replace them, and then convert the cleaned values to integers.
